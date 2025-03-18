@@ -16,4 +16,26 @@ with open("data.pickle", "wb") as file:
     pickle.dump(data, file)  # Zapisuje obiekt data do pliku w formacie pickle
 ```
 
-W powyższym przykładzie, używamy modułu pickle do serializacji słownika `data` i zapisujemy go do pliku `data.pickle`. Użycie trybu "wb" w funkcji `open` oznacza, że plik jest otwierany do zapisu w trybie binarnym, co jest wymagane przez proces piklowania.
+W powyższym przykładzie, używamy modułu pickle do serializacji słownika `data` i zapisujemy go do pliku `data.pickle`. Użycie trybu `wb` w funkcji `open` oznacza, że plik jest otwierany do zapisu w trybie binarnym, co jest wymagane przez proces piklowania.
+
+## Deserializacja (Odpiklowanie)
+Deserializacja, czyli odpiklowanie, to proces odwrotny do serializacji. Polega na przekształceniu danych z formatu bajtowego z powrotem na obiekt Pythona. Dzięki temu możemy odtworzyć stan obiektu zapisanego wcześniej na dysku.
+
+```python
+import pickle
+
+# Odpiklowanie danych z pliku
+with open("data.pickle", "rb") as file:
+    data_loaded = pickle.load(file)  # Odczytuje obiekt z pliku i przypisuje do zmiennej data_loaded
+
+# Wyświetlanie załadowanych danych
+print(data_loaded)  # Wyświetli: {'klucz': 'wartość', 'liczba': 42}
+```
+
+W powyższym fragmencie kodu, otwieramy plik `data.pickle` w trybie `rb` (czytanie w formacie binarnym) i używamy funkcji `pickle.load` do odczytania i deserializacji danych z pliku, a następnie przypisujemy je do zmiennej `data_loaded`.
+
+
+
+
+Serializacja i deserializacja w Pythonie, znane jako piklowanie i odpiklowanie, są potężnymi narzędziami, umożliwiającymi zapis i odtwarzanie stanu obiektów. Dzięki tym procesom, możemy łatwo przechowywać złożone struktury danych lub przesyłać je między różnymi częściami aplikacji.
+> # Ważne jest jednak, aby pamiętać o potencjalnych zagrożeniach bezpieczeństwa związanych z odczytem niezaufanych danych piklowanych, gdyż deserializacja niebezpiecznych danych może prowadzić do ataków lub niechcianych efektów w programie.
