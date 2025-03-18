@@ -38,4 +38,4 @@ W powyższym fragmencie kodu, otwieramy plik `data.pickle` w trybie `rb` (czytan
 
 
 Serializacja i deserializacja w Pythonie, znane jako piklowanie i odpiklowanie, są potężnymi narzędziami, umożliwiającymi zapis i odtwarzanie stanu obiektów. Dzięki tym procesom, możemy łatwo przechowywać złożone struktury danych lub przesyłać je między różnymi częściami aplikacji.
-> # Ważne jest jednak, aby pamiętać o potencjalnych zagrożeniach bezpieczeństwa związanych z odczytem niezaufanych danych piklowanych, gdyż deserializacja niebezpiecznych danych może prowadzić do ataków lub niechcianych efektów w programie.
+> ### Ważne jest jednak, aby pamiętać o potencjalnych zagrożeniach bezpieczeństwa związanych z odczytem niezaufanych danych piklowanych, gdyż deserializacja niebezpiecznych danych może prowadzić do ataków lub niechcianych efektów w programie.
