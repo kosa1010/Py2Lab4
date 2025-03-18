@@ -6,6 +6,16 @@ W programowaniu, także w języku Python, często spotyka się pojęcia serializ
 Serializacja, znana w Pythonie jako “piklowanie”, to proces konwersji obiektu w Pythonie do formatu bajtowego, który można zapisać na dysku lub przesłać przez sieć. Operacja ta umożliwia zapis stanu obiektu do pliku, co jest szczególnie przydatne w przypadku przechowywania złożonych struktur danych, takich jak listy, słowniki, a nawet instancje klas. Dane zapisane
 w pliku mogą później posłużyć do odtworzenia stanu programu przy jego kolejnym uruchomieniu.
 
+Funkcja dumps() pozwala na_serializację obiektu do_ciągu bajtów. Ciąg bajtów można zapisać do pliku lub przesłać przez_sieć.
+```python
+import pickle
+phone_book = {"Jonna": "542124",
+ "Maciej": "542323",
+ }
+bytes = pickle.dumps(phone_book)
+```
+
+Zapisanie danych do pliku możemy zrealizować za_pomocą funkcji `dump()`.
 ```python
 import pickle
 
