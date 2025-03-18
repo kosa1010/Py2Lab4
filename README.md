@@ -8,7 +8,7 @@ Serializacja, znana w Pythonie jako “piklowanie”, to proces konwersji obiekt
 ```python
 import pickle
 
-# Definicja prostej struktury danych
+# Definicja prostego słownika
 data = {"klucz": "wartość", "liczba": 42}
 
 # Piklowanie danych do pliku
@@ -16,3 +16,4 @@ with open("data.pickle", "wb") as file:
     pickle.dump(data, file)  # Zapisuje obiekt data do pliku w formacie pickle
 ```
 
+W powyższym przykładzie, używamy modułu pickle do serializacji słownika `data` i zapisujemy go do pliku `data.pickle`. Użycie trybu "wb" w funkcji `open` oznacza, że plik jest otwierany do zapisu w trybie binarnym, co jest wymagane przez proces piklowania.
