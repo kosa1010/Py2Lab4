@@ -2,9 +2,13 @@
 
 W programowaniu, także w języku Python, często spotyka się pojęcia serializacji i deserializacji. Te techniki są kluczowe, gdy chcemy zapisywać stan obiektu do pliku, aby móc go później odtworzyć, lub przesyłać dane między różnymi programami lub instancjami programu. 
 
-## Serializacja (inaczej marshalling, pickling lub flattening) )
+## Serializacja (inaczej marshalling, pickling lub flattening)
 Serializacja, znana w Pythonie jako “piklowanie”, to proces konwersji obiektu w Pythonie do formatu bajtowego, który można zapisać na dysku lub przesłać przez sieć. Operacja ta umożliwia zapis stanu obiektu do pliku, co jest szczególnie przydatne w przypadku przechowywania złożonych struktur danych, takich jak listy, słowniki, a nawet instancje klas. Dane zapisane
 w pliku mogą później posłużyć do odtworzenia stanu programu przy jego kolejnym uruchomieniu.
+
+W Pythonie najpopularniejsze biblioteki do serializacji to:
+* pickle - pozwala serializować i deserializować praktycznie dowolne obiekty Pythona.
+* json - obsługuje tylko podstawowe typy danych (słowniki, listy, napisy, liczby, wartości logiczne i None), ale jest czytelny dla człowieka.
 
 Funkcja dumps() pozwala na_serializację obiektu do_ciągu bajtów. Ciąg bajtów można zapisać do pliku lub przesłać przez_sieć.
 ```python
