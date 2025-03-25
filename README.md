@@ -131,10 +131,13 @@ Serializacja i deserializacja w Pythonie, są potężnymi narzędziami, umożliw
 ## Zadania do wykonania
 :one: Serializacja i deserializacja JSON:
 * Utwórz skrypt, który zapisuje listę produktów (każdy produkt to słownik zawierający nazwa, cena, dostepnosc) do pliku JSON i potem je z niego odczytuje.
+  
 :two: Serializacja i deserializacja klasy:
-* Stwórz klasę Samochod z polami marka, model, rocznik i zapisz obiekt tej klasy do pliku pickle.
+* Stwórz klasę Samochod z polami marka, model, rocznik i zapisz obiekt tej klasy do pliku `*.pickle`.
 * Odczytaj obiekt z pliku i wyświetl jego wartości.
-:three:Zastosowanie json.dumps() i json.loads():
-* Napisz program, który konwertuje słownik na format JSON przy użyciu json.dumps(), a następnie odczytuje go przy użyciu json.loads().
+  
+:three:Zastosowanie `json.dumps()` i `json.loads()`:
+* Napisz program, który konwertuje słownik na format JSON przy użyciu `json.dumps()`, a następnie odczytuje go przy użyciu `json.loads()`.
+  
 :four:Obsługa błędów:
 * Dodaj obsługę błędów dla przypadków, gdy plik nie istnieje lub dane są w niepoprawnym formacie.
